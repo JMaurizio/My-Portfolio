@@ -2,8 +2,14 @@
 
 function Home() {
     return (
-       <div className="d-flex">
-           <h1 className="align-self-center">My name is Josh and I'm a full stack web developer</h1>
+       <div id="home" className="d-flex align-items-center">
+           <p>
+                <span id="hi">Hi,</span>
+                <br/> 
+                <span id="josh">I'm <span>J</span>osh,</span>
+                <br/> 
+                <span id="web-dev">A full stack web developer</span>
+            </p>
        </div> 
     )
 };

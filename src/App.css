@@ -1,38 +1,62 @@
-.App {
+#home {
+  height: 450px;
+}
+
+#hi {
+  font-size: 50px;
   text-align: center;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#josh {
+  font-size: 50px;
+  text-align: center;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -o-animation: fadein 4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#web-dev {
+  font-size: 50px;
+  text-align: center;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadein {
   from {
-    transform: rotate(0deg);
+      opacity:0;
   }
   to {
-    transform: rotate(360deg);
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
   }
 }
