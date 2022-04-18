@@ -28,6 +28,27 @@
   -webkit-animation: fadein 6s;
   -o-animation: fadein 6s;
 }
+
+#catro {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+#chattleship {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -o-animation: fadein 4s;
+}
+
+#programmer {
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
 @keyframes fadein {
   from {
       opacity:0;
