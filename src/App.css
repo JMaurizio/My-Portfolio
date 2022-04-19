@@ -57,6 +57,11 @@
   -o-animation: fadein 6s;
 }
 
+/* Contact page styles */
+#contact-text {
+  font-size: 30px;
+}
+
 /* animations */
 @keyframes fadein {
   from {
