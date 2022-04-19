@@ -2,7 +2,7 @@
 
 function Home() {
     return (
-       <div id="home" className="d-flex align-items-center">
+       <div id="home" className="d-flex align-items-center text-white">
            <p>
                 <span id="hi">Hi,</span>
                 <br/> 

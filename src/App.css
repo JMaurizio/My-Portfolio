@@ -1,3 +1,9 @@
+/* Main styles */
+#main {
+  height: 600px;
+}
+
+/* Home page styles */
 #home {
   height: 450px;
 }
@@ -20,6 +26,7 @@
   -o-animation: fadein 4s;
 }
 
+/* Project page styles */
 #web-dev {
   font-size: 50px;
   text-align: center;
@@ -49,6 +56,8 @@
   -webkit-animation: fadein 6s;
   -o-animation: fadein 6s;
 }
+
+/* animations */
 @keyframes fadein {
   from {
       opacity:0;

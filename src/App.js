@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import "./App.css";
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-    <section className="container-fluid d-flex flex-column">
+    <section id="main" className="container-fluid d-flex flex-column justify-content-between bg-dark">
       <div className="d-flex justify-content-end mb-2">
         <Header
         page = {page}
@@ -16,6 +17,7 @@ function App() {
         />
       </div>
       {page}
+      <Footer/>
     </section>  
     </>
   );
