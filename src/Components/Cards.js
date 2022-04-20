@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 
 function Cards(props) {
     return(
-        <Card id={props.project.id} className="w-25 m-4">
+        <Card id={props.project.id}>
             <Card.Img variant="top" src={props.project.image} />
             <Card.Body>
                 <Card.Title>{props.project.name}</Card.Title>

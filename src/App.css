@@ -1,13 +1,10 @@
 /* Main styles */
 #main {
-  height: 600px;
+  min-height: 600px;
+  max-height: 2400px;
 }
 
 /* Home page styles */
-#home {
-  height: 450px;
-}
-
 #hi {
   font-size: 50px;
   text-align: center;
@@ -26,7 +23,6 @@
   -o-animation: fadein 4s;
 }
 
-/* Project page styles */
 #web-dev {
   font-size: 50px;
   text-align: center;
@@ -36,11 +32,14 @@
   -o-animation: fadein 6s;
 }
 
+/* Project page styles */
 #catro {
   animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
   -o-animation: fadein 2s;
+  width: 25%;
+  margin: 14px;
 }
 
 #chattleship {
@@ -48,6 +47,8 @@
   -moz-animation: fadein 4s;
   -webkit-animation: fadein 4s;
   -o-animation: fadein 4s;
+  width: 25%;
+  margin: 14px;
 }
 
 #programmer {
@@ -55,11 +56,24 @@
   -moz-animation: fadein 6s;
   -webkit-animation: fadein 6s;
   -o-animation: fadein 6s;
+  width: 25%;
+  margin: 14px;
 }
 
 /* Contact page styles */
 #contact-text {
   font-size: 30px;
+}
+
+/* About page styles */
+#about-portrait {
+  width: 302px;
+  height: 403px;
+}
+
+#about-text {
+  font-size: 24px;
+  width: 50%;
 }
 
 /* animations */
@@ -93,5 +107,49 @@
   }
   to {
       opacity: 1;
+  }
+}
+
+/* Mediaqueries */
+
+@media screen and (max-width: 400px ) {
+
+  /* Main mediaqueries */
+  #main {
+    min-height: 730px;
+    max-height: 2400px;
+  }
+
+  /* Project mediaqueries */
+  #catro {
+    width: 100%;
+    margin: 14px;
+  }
+  
+  #chattleship {
+    width: 100%;
+    margin: 14px;
+  }
+  
+  #programmer {
+    width: 100%;
+    margin: 14px;
+  }
+
+  /* Contact mediaqueries */
+  #contact-text {
+    font-size: 26px;
+  }
+
+  /* About mediaqueries */
+  #about-portrait {
+    width: 226px;
+    height: 302px;
+    margin-bottom: 30px;
+  }
+  
+  #about-text {
+    font-size: 24px;
+    width: 1000%;
   }
 }
