@@ -14,7 +14,7 @@
   -o-animation: fadein 2s;
 }
 
-#josh {
+#im {
   font-size: 50px;
   text-align: center;
   animation: fadein 4s;
@@ -22,6 +22,66 @@
   -webkit-animation: fadein 4s;
   -o-animation: fadein 4s;
 }
+
+#josh {
+  display: inline;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -o-animation: fadein 4s;
+}
+
+#josh::before {
+  content: "Josh";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    red 2px,
+    red 4px
+  );
+  animation: fadein 10s;
+  -webkit-background-clip: text;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  transition: 1s;
+}
+
+#josh::after {
+  content: "Josh";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    blue 2px,
+    blue 4px
+  );
+  animation: fadein 10s;
+  -webkit-background-clip: text;
+  top: 10px;
+  left: 10px;
+  transition: 1s;
+}
+
+#josh:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+#josh:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
 
 #web-dev {
   font-size: 50px;
