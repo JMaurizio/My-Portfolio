@@ -33,13 +33,32 @@
 }
 
 /* Project page styles */
+.card {
+  width: 25%;
+  height: 100%;
+  margin: 16px;
+  object-fit:cover;
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+}
+
+.card-link {
+  text-decoration: none;
+  color: white;
+}
+
 #catro {
   animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
   -o-animation: fadein 2s;
-  width: 25%;
-  margin: 14px;
 }
 
 #chattleship {
@@ -47,8 +66,6 @@
   -moz-animation: fadein 4s;
   -webkit-animation: fadein 4s;
   -o-animation: fadein 4s;
-  width: 25%;
-  margin: 14px;
 }
 
 #programmer {
@@ -56,8 +73,15 @@
   -moz-animation: fadein 6s;
   -webkit-animation: fadein 6s;
   -o-animation: fadein 6s;
-  width: 25%;
-  margin: 14px;
+}
+
+#card-container:hover .card {
+  opacity:0.3;
+}
+
+#card-container .card:hover {
+  transform:perspective(800px) rotateY(0deg);
+  opacity: 1;
 }
 
 /* Contact page styles */
@@ -121,19 +145,20 @@
   }
 
   /* Project mediaqueries */
-  #catro {
+  .card {
     width: 100%;
     margin: 14px;
+    height: 100%;
+    -webkit-box-reflect:below 0px linear-gradient(transparent, transparent, transparent);
+    transform:perspective(800px) rotateY(0deg);
+  }
+
+  #card-container:hover .card {
+    opacity:1;
   }
   
-  #chattleship {
-    width: 100%;
-    margin: 14px;
-  }
-  
-  #programmer {
-    width: 100%;
-    margin: 14px;
+  #card-container .card:hover {
+    opacity: 1;
   }
 
   /* Contact mediaqueries */

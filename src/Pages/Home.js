@@ -6,7 +6,7 @@ function Home() {
            <p>
                 <span id="hi">Hi,</span>
                 <br/> 
-                <span id="josh">I'm <span>J</span>osh,</span>
+                <span id="josh">I'm Josh,</span>
                 <br/> 
                 <span id="web-dev">A full stack web developer</span>
             </p>

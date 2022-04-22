@@ -37,7 +37,7 @@ function Projects() {
         project.push(<Cards key={`Project-${i}`} project={projectInfo[i]}/>)
     }
     return(
-        <div className="d-flex flex-wrap">
+        <div id="card-container" className="d-flex flex-wrap">
             {project}
         </div>
     )
