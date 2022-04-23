@@ -1,12 +1,25 @@
+:root {
+  --primary:#2A3132;
+  --secondary:#336B87;
+  --tertiary:#763626;
+  --quaternary:#90AFC5;
+}
+
 /* Main styles */
 #main {
   min-height: 600px;
   max-height: 2400px;
 }
 
+svg {
+  color:var(--tertiary)
+}
+
 /* Home page styles */
 #hi {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Kanit', sans-serif;
+  color: var(--quaternary);
   text-align: center;
   animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -15,7 +28,9 @@
 }
 
 #im {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Kanit', sans-serif;
+  color: var(--quaternary);
   text-align: center;
   animation: fadein 4s;
   -moz-animation: fadein 4s;
@@ -26,7 +41,9 @@
 #josh {
   display: inline;
   position: relative;
-  font-size: 50px;
+  color: var(--quaternary);
+  font-size: 60px;
+  font-family: 'Nova Flat', cursive;
   text-align: center;
   transform: translate(-50%, -50%);
   animation: fadein 4s;
@@ -41,15 +58,15 @@
   color: transparent;
   background-image: repeating-linear-gradient(
     45deg,
-    transparent 0,
     transparent 2px,
-    red 2px,
-    red 4px
+    transparent 2px,
+    var(--secondary) 2px,
+    var(--secondary) 4px
   );
-  animation: fadein 10s;
+  animation: fadein 8s;
   -webkit-background-clip: text;
   top: -10px;
-  left: -10px;
+  left: 0px;
   z-index: -1;
   transition: 1s;
 }
@@ -60,15 +77,15 @@
   color: transparent;
   background-image: repeating-linear-gradient(
     135deg,
-    transparent 0,
     transparent 2px,
-    blue 2px,
-    blue 4px
+    transparent 2px,
+    var(--tertiary) 2px,
+    var(--tertiary) 4px
   );
-  animation: fadein 10s;
+  animation: fadein 8s;
   -webkit-background-clip: text;
-  top: 10px;
-  left: 10px;
+  top: -5px;
+  left: 0px;
   transition: 1s;
 }
 
@@ -78,13 +95,15 @@
 }
 
 #josh:hover:after {
-  top: -10px;
+  top: -15px;
   left: -10px;
 } 
 
 
 #web-dev {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Kanit', sans-serif;
+  color: var(--quaternary);
   text-align: center;
   animation: fadein 6s;
   -moz-animation: fadein 6s;
@@ -105,13 +124,28 @@
 }
 
 .card-body {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--quaternary);
+  font-family: 'Kanit', sans-serif;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Nova Flat', cursive;
 }
 
 .card-link {
   text-decoration: none;
-  color: white;
+  color: var(--secondary);
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  opacity: 0.4;
+}
+
+.card-link:hover {
+  color: var(--tertiary);
+  opacity: 1;
 }
 
 #catro {
@@ -145,8 +179,19 @@
 }
 
 /* Contact page styles */
-#contact-text {
+.contact-text {
   font-size: 30px;
+  color: var(--quaternary);
+  font-family: 'Kanit', sans-serif;
+}
+
+#contact-link {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+#contact-link:hover {
+  color: var(--tertiary);
 }
 
 /* About page styles */
@@ -157,6 +202,8 @@
 
 #about-text {
   font-size: 24px;
+  font-family: 'Kanit', sans-serif;
+  color: var(--quaternary);
   width: 50%;
 }
 

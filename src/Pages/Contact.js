@@ -4,9 +4,9 @@ import resume from "../assets/images/joshua-maurizio-resume.pdf"
 function Contact() {
     return(
         <div className="d-flex flex-wrap flex-column justify-content-center text-white">
-            <p id="contact-text" className="align-self-center">Take a look at my <a href={resume} target="blank">resume here</a></p>
-            <p id="contact-text" className="align-self-center">Please feel free to reach out to me with any opportunities or questions</p>
-            <p id="contact-text" className="align-self-center">by Email, Github or LinkedIn.</p>
+            <p className="contact-text align-self-center">Take a look at my <a id="contact-link" href={resume} target="blank">resume here</a></p>
+            <p className="contact-text align-self-center">Please feel free to reach out to me with any opportunities or questions</p>
+            <p className="contact-text align-self-center">by Email, Github or LinkedIn.</p>
             <div className="d-flex justify-content-center">
                 <Button className="m-1" href="mailto:josh.maurizio@gmail.com" target="blank" variant="dark">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">

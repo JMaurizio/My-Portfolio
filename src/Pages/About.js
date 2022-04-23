@@ -5,7 +5,7 @@ function About() {
     return (
         <div className="d-flex flex-wrap justify-content-evenly">
             <Image id="about-portrait" src={portrait}/>
-            <p id="about-text" className="text-white">
+            <p id="about-text">
                 Hello! I'm Joshua Maurizio, a web developer in Nashville, Tennessee. 
                 I live with my beautiful wife Brittany and our rescue dog Antonio in our home we've been fixing up on the outskirts of Nashville. 
                 Web development has always been an interest of mine, and now I'm pursuing it as a full-time career. 
