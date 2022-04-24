@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <section id="main" className="container-fluid d-flex flex-column justify-content-between bg-dark">
-      <div className="d-flex justify-content-end mb-2">
+      <div>
         <Header
         page = {page}
         setPage = {setPage}
