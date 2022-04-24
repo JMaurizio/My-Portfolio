@@ -35,6 +35,10 @@ svg {
   cursor: pointer;
 }
 
+.nav-icon {
+  padding-top: 4px;
+}
+
 .nav-background {
   position: fixed;
   top: 14px;
@@ -77,6 +81,7 @@ svg {
   margin: 12px;
   color: var(--quaternary);
   font-size: 34px;
+  font-family: 'Kanit', sans-serif;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -145,7 +150,7 @@ svg {
     var(--secondary) 2px,
     var(--secondary) 4px
   );
-  animation: fadein 8s;
+  animation: fadein 6s;
   -webkit-background-clip: text;
   top: -10px;
   left: 0px;
@@ -164,7 +169,7 @@ svg {
     var(--tertiary) 2px,
     var(--tertiary) 4px
   );
-  animation: fadein 8s;
+  animation: fadein 6s;
   -webkit-background-clip: text;
   top: -5px;
   left: 0px;
@@ -222,7 +227,7 @@ svg {
   color: var(--secondary);
   font-family: 'Kanit', sans-serif;
   font-size: 18px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .card-link:hover {
@@ -335,7 +340,7 @@ svg {
 
   /* Project mediaqueries */
   .card {
-    width: 100%;
+    width: 80%;
     margin: 14px;
     height: 100%;
     -webkit-box-reflect:below 0px linear-gradient(transparent, transparent, transparent);
@@ -365,5 +370,24 @@ svg {
   #about-text {
     font-size: 24px;
     width: 1000%;
+  }
+}
+
+@media screen and (max-width: 1000px ) {
+  /* Project mediaqueries */
+  .card {
+    width: 80%;
+    margin: 14px;
+    height: 100%;
+    -webkit-box-reflect:below 0px linear-gradient(transparent, transparent, transparent);
+    transform:perspective(800px) rotateY(0deg);
+  }
+
+  #card-container:hover .card {
+    opacity:1;
+  }
+  
+  #card-container .card:hover {
+    opacity: 1;
   }
 }
