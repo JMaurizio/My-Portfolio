@@ -50,8 +50,7 @@ function Header({page, setPage}) {
                     <button className="nav-item"onClick={() => aboutClick()} href="About">About</button>
                     <button className="nav-item"onClick={() => skillClick()} href="Contact">Skills</button>
                     <button className="nav-item"onClick={() => projectClick()} href="Projects">Projects</button>
-                    <button className="nav-item"onClick={() => contactClick()} href="Contact">Contact</button>
-                    
+                    <button className="nav-item"onClick={() => contactClick()} href="Contact">Contact</button>   
                 </div>
             </div>
         </div>

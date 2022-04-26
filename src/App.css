@@ -266,7 +266,15 @@ svg {
 }
 
 /* Contact page styles */
-.contact-text {
+#contact-text {
+  font-size: 30px;
+  text-align: center;
+  color: var(--quaternary);
+  font-family: 'Kanit', sans-serif;
+}
+
+#contact-text2 {
+  width: 80%;
   font-size: 30px;
   text-align: center;
   color: var(--quaternary);
@@ -291,6 +299,7 @@ svg {
 #about-text {
   font-size: 24px;
   font-family: 'Kanit', sans-serif;
+  text-align: center;
   color: var(--quaternary);
   width: 50%;
 }
@@ -528,8 +537,8 @@ svg {
   }
 
   /* Contact mediaqueries */
-  #contact-text {
-    font-size: 26px;
+  #contact-text2 {
+    width: 100%;
   }
 
   /* About mediaqueries */
@@ -595,12 +604,17 @@ svg {
   #nosql-bubble {
     margin-top: -20px;
   }
+
+  /* Contact mediaqueries */
+  #contact-text2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000px ) {
   /* Project mediaqueries */
   .card {
-    width: 40%;
+    width: 80%;
     margin: 14px;
     height: 100%;
     -webkit-box-reflect:below 0px linear-gradient(transparent, transparent, transparent);
