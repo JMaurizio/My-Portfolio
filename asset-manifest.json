@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.cf7b87ea.css",
+    "main.js": "/My-Portfolio/static/js/main.e36b0eff.js",
+    "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/joshua-maurizio-portrait.jpg": "/My-Portfolio/static/media/joshua-maurizio-portrait.75eb799cc3a5da795fb0.jpg",
+    "static/media/programmer-dashboard.png": "/My-Portfolio/static/media/programmer-dashboard.9953c9cbb3495bc6183b.png",
+    "static/media/chattleship-board-crop.png": "/My-Portfolio/static/media/chattleship-board-crop.7d2a453ebd9547d5a70a.png",
+    "static/media/joshua-maurizio-resume.pdf": "/My-Portfolio/static/media/joshua-maurizio-resume.257971e4c56bcd1d4a84.pdf",
+    "static/media/catro-logo.png": "/My-Portfolio/static/media/catro-logo.083aecc01fd558abe862.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.cf7b87ea.css.map": "/My-Portfolio/static/css/main.cf7b87ea.css.map",
+    "main.e36b0eff.js.map": "/My-Portfolio/static/js/main.e36b0eff.js.map",
+    "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf7b87ea.css",
+    "static/js/main.e36b0eff.js"
+  ]
+}
