@@ -9,13 +9,11 @@ function App() {
 
   return (
     <>
-    <section id="main" className="container-fluid d-flex flex-column justify-content-between bg-dark">
-      <div>
-        <Header
+    <section id="main" className="d-flex flex-column justify-content-between bg-dark">
+      <Header
         page = {page}
         setPage = {setPage}
-        />
-      </div>
+      />
       {page}
       <Footer/>
     </section>  

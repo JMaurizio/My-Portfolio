@@ -266,8 +266,17 @@ svg {
 }
 
 /* Contact page styles */
-.contact-text {
+#contact-text {
   font-size: 30px;
+  text-align: center;
+  color: var(--quaternary);
+  font-family: 'Kanit', sans-serif;
+}
+
+#contact-text2 {
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
   color: var(--quaternary);
   font-family: 'Kanit', sans-serif;
 }
@@ -290,10 +299,136 @@ svg {
 #about-text {
   font-size: 24px;
   font-family: 'Kanit', sans-serif;
+  text-align: center;
   color: var(--quaternary);
   width: 50%;
 }
 
+/* Skills page styles */
+#skill-bubble-container {
+  width: 60%;
+  font-family: 'Kanit', sans-serif;
+}
+
+#html-bubble {
+  animation: float 4s ease-in-out infinite;
+  background-color: var(--tertiary);
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--secondary);
+}
+
+#css-bubble {
+  animation: float 6s ease-in-out infinite;
+  background-color: var(--secondary);
+  font-size: 28px;
+  width: 75px;
+  height: 60px;
+  margin-left: -80px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--tertiary);
+}
+
+#javascript-bubble {
+  animation: float 2s ease-in-out infinite;
+  background-color: var(--tertiary);
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  box-shadow: 5px 5px var(--secondary);
+}
+
+#react-bubble {
+  animation: float 10s ease-in-out infinite;
+  background-color: var(--secondary);
+  font-size: 36px;
+  width: 125px;
+  height: 90px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--tertiary);
+}
+
+#node-bubble {
+  animation: float 4s ease-in-out infinite;
+  background-color: var(--secondary);
+  font-size: 24px;
+  width: 95px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--tertiary);
+}
+
+#mongo-bubble {
+  animation: float 7s ease-in-out infinite;
+  background-color: var(--tertiary);
+  font-size: 20px;
+  width: 100px;
+  height: 80px;
+  margin-right: 40px;
+  margin-left: -40px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--secondary);
+}
+
+#express-bubble {
+  animation: float 2s ease-in-out infinite;
+  background-color: var(--tertiary);
+  width: 75px;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--secondary);
+}
+
+#mysql-bubble {
+  animation: float 6s ease-in-out infinite;
+  background-color: var(--secondary);
+  font-size: 28px;
+  width: 110px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--tertiary);
+}
+
+#nosql-bubble {
+  animation: float 5s ease-in-out infinite;
+  background-color: var(--tertiary);
+  width: 55px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  box-shadow: 5px 5px var(--secondary);
+}
 /* animations */
 @keyframes fadein {
   from {
@@ -328,6 +463,52 @@ svg {
   }
 }
 
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@-moz-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@-o-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 /* Mediaqueries */
 
 @media screen and (max-width: 400px ) {
@@ -356,8 +537,8 @@ svg {
   }
 
   /* Contact mediaqueries */
-  #contact-text {
-    font-size: 26px;
+  #contact-text2 {
+    width: 100%;
   }
 
   /* About mediaqueries */
@@ -370,6 +551,63 @@ svg {
   #about-text {
     font-size: 24px;
     width: 1000%;
+  }
+
+  /* Skill mediaqueries */
+  #skill-bubble-container {
+    width: 100%;
+  }
+
+  #css-bubble {
+    margin-left: -60px;
+  }
+
+  #express-bubble {
+    margin-right: 20px;
+  }
+
+  #mysql-bubble {
+    margin-top: 20px;
+  }
+
+  #mongo-bubble {
+    margin-top: 110px;
+  }
+
+  #nosql-bubble {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 700px ) {
+  /* Skills mediaqueries */
+  #skill-bubble-container {
+    width: 100%;
+  }
+
+  #css-bubble {
+    margin-left: -60px;
+  }
+
+  #express-bubble {
+    margin-right: 20px;
+  }
+
+  #mysql-bubble {
+    margin-top: 20px;
+  }
+
+  #mongo-bubble {
+    margin-top: 110px;
+  }
+
+  #nosql-bubble {
+    margin-top: -20px;
+  }
+
+  /* Contact mediaqueries */
+  #contact-text2 {
+    width: 100%;
   }
 }
 
